@@ -1,6 +1,6 @@
-App.jsx
-Submit.jsx -> input and button
-Card.jsx -> Display favs
+- App.jsx
+- Submit.jsx -> input and button
+- Card.jsx -> Display favs
 
 - -> up/down votes
 - -> delete
