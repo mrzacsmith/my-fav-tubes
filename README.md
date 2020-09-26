@@ -2,9 +2,9 @@
 
 A MERN app that allows you to enter your favorite YouTube videos and it will render them with an embed.
 
-## Stackkk
+## Stack
 
-- Murphy
+- Mongo
 - Express
 - React
 - Node
@@ -20,30 +20,30 @@ A MERN app that allows you to enter your favorite YouTube videos and it will ren
   - lambda-react
 
 - Backend
+
   - express
-  - helemt
+  - helmet
   - morgan
   - cors
   - colors
   - mongoose
 
-## Istalleation
+## Installation
 
 - `npx lambda-react tommy-john`
-- script `soemthing goes here`
+- script `npm run hack`
 
 ### License
 
-??
+[MIT](https://github.com/jlpanetta1681/my-fav-tubes/blob/master/LICENSE) 
 
 ### Test
 
 - Frontend
   - cypress
-- Backend
 
+- Backend
   - jest
 
-  ### Contributing
-
-  Review the CONTRIBUTING document.
+### Contributing
+Review the [CONTRIBUTING](https://github.com/jlpanetta1681/my-fav-tubes/blob/master/CONTRIBUTING.md) document.
