@@ -2,12 +2,16 @@ import React from 'react'
 
 import './App.css'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       {/* Remove everything from this comment  ------ */}
       <h2>Welcome Lambda student! This is filler, no need to keep it!</h2>
-      <a href="https://lambdaschool.com/" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://lambdaschool.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Visit the Lambda Llama home
       </a>
       <br />
@@ -20,16 +24,28 @@ function App() {
         <p>Created using Create-React-App</p>
         <p>Modified and maintained by Lambda School graduate:</p>
         <p>
-          Zac Smith {' '}
-          <a href="https://github.com/mrzacsmith" target="_blank" rel="noopener noreferrer">
+          Zac Smith{' '}
+          <a
+            href="https://github.com/mrzacsmith"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Github
           </a>{' '}
           ::{' '}
-          <a href="https://www.npmjs.com/~mrzacsmith" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.npmjs.com/~mrzacsmith"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             NPM
           </a>{' '}
           ::{' '}
-          <a href="https://twitter.com/mrzacsmith" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://twitter.com/mrzacsmith"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Twitter
           </a>
         </p>
