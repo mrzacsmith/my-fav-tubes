@@ -1,19 +1,24 @@
 # My Fav Tubes
-A MERN app that allows you to enter your favorite YouTube videos and it will render them with an embed. 
+
+A MERN app that allows you to enter your favorite YouTube videos and it will render them with an embed.
 
 ## Stackkk
+
 - Murphy
 - Express
 - React
 - Node
 
 ### Dependencies
+
 - Frontend
+
   - axios
   - styled-components
   - react-form-hook
   - cypress
- 
+  - lambda-react
+
 - Backend
   - express
   - helemt
@@ -21,7 +26,7 @@ A MERN app that allows you to enter your favorite YouTube videos and it will ren
   - cors
   - colors
   - mongoose
-  
+
 ## Istalleation
 
 - `npx lambda-react tommy-john`
@@ -35,9 +40,10 @@ A MERN app that allows you to enter your favorite YouTube videos and it will ren
 
 - Frontend
   - cypress
-- Backend 
-  - jest
-  
-  ### Contributing
-  Review the CONTRIBUTING document.
+- Backend
 
+  - jest
+
+  ### Contributing
+
+  Review the CONTRIBUTING document.
