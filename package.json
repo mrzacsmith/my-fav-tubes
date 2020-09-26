@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.20.0",
     "colors": "^1.4.0",
+    "cuid": "^2.1.8",
     "cypress": "^5.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
