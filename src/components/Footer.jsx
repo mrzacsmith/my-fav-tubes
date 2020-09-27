@@ -1,10 +1,17 @@
 import React from 'react'
+import styled from 'styled-components'
+
+const StyledDiv = styled.div`
+  p {
+    margin: ${(pr) => pr.theme.marginLarge};
+  }
+`
 
 const Footer = () => {
   return (
-    <div>
+    <StyledDiv>
       <p>Copyright &copy; 2020</p>
-    </div>
+    </StyledDiv>
   )
 }
 
