@@ -25,6 +25,7 @@ const StyledDiv = styled.div`
 const Card = ({ data }) => {
   const { url, votes } = data
   let urlFixed = url.replace('watch?v=', 'embed/')
+  console.log('url', url)
   return (
     <StyledDiv>
       <iframe

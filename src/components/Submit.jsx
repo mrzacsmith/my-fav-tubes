@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
+import axios from 'axios'
+import { useForm } from 'react-hook-form'
 import CardList from './CardList'
 
 const StyledDiv = styled.div`
-  height: 90vh;
   form {
     width: 80%;
     margin: ${(pr) => pr.theme.marginLarge} auto 0;
@@ -24,13 +25,51 @@ const StyledDiv = styled.div`
 `
 
 const Submit = () => {
+  const [videos, setVideos] = useState([])
+  const [update, setUpdate] = useState(false)
+  const { handleSubmit, register, errors } = useForm()
+  const url = 'http://localhost:5555/api/videos/'
+  const onSubmit = (values) => {
+    console.log('values', typeof values)
+    axios
+      .post(url, values)
+      .then((res) => {
+        setVideos(res.data)
+        setUpdate(!update)
+      })
+      .catch((err) => console.log(`Error: ${err}`))
+      .finally()
+  }
+
+  useEffect(() => {
+    axios
+      .get(url)
+      .then((res) => {
+        setVideos(res.data)
+      })
+      .catch((err) => console.log(`Error: ${err}`))
+  }, [update])
+  console.log('videos', videos)
+
   return (
     <StyledDiv>
-      <form>
-        <input type="text" placeholder="Enter your YouTube URL" />
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <input
+          type="text"
+          placeholder="Enter your YouTube URL"
+          name="url"
+          ref={register({
+            required: 'Required',
+            pattern: {
+              // value: '',
+              message: 'invalid YouTube url',
+            },
+          })}
+        />
+        {errors.url && errors.url.message}
         <button type="submit">submit</button>
       </form>
-      <CardList />
+      <CardList data={videos} />
     </StyledDiv>
   )
 }
