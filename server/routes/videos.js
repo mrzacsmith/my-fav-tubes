@@ -22,7 +22,7 @@ router.get('/:id', (req, res) => {
 // @desc:   Add new video
 // @route:  POST /
 router.post('/', (req, res) => {
-  if (req.query.data === process.env.DATA) {
+  if (true) {
     const newVideo = new Video({
       url: req.body.url,
       votes: req.body.votes,
