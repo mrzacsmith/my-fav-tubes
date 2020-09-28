@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const colors = require('colors')
+require('colors')
 
 const connectDB = async () => {
   try {
@@ -10,7 +10,7 @@ const connectDB = async () => {
     })
     console.log(`** MongoDB Connected: ${connect.connection.host}\n`.rainbow)
   } catch (error) {
-    console.log(colors(error))
+    console.log(error)
     process.exit(1)
   }
 }
