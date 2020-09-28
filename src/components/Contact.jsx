@@ -1,11 +1,11 @@
 import React from 'react'
 
 const Contact = () => {
-  return (
-    <div>
-      <p>Contact Form</p>
-    </div>
-  )
+	return (
+		<div>
+			<p>Contact the contributors</p>
+		</div>
+	)
 }
 
 export default Contact

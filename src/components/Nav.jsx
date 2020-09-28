@@ -6,6 +6,7 @@ const StyledNav = styled.nav`
 	background: rosybrown;
 	display: flex;
 	justify-content: space-between;
+
 	h1 {
 		margin: 1% 0 1% 1%;
 	}
@@ -27,7 +28,15 @@ const Nav = () => {
 				<h1>My Fav Tubes</h1>
 			</NavLink>
 			<ul>
-				<li>YouTube</li>
+				<li>
+					<a
+						rel="noopener noreferrer"
+						href="http://www.youtube.com/c/ZacSmith"
+						target="_blank"
+					>
+						YouTube
+					</a>
+				</li>
 				<li>
 					<NavLink to="/contact">Contact</NavLink>
 				</li>
