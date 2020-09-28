@@ -14,10 +14,9 @@ const StyledDiv = styled.div`
     margin-top: 2%;
   }
   &:hover {
-    background: #c3c3c3;
+    background: ${(pr) => pr.theme.manatee};
     border: ${(pr) => pr.theme.borderHover};
-    transition-timing-function: ease-in-out;
-    transition-duration: 1s;
+    transition: ${(pr) => pr.theme.transitionStyle};
     cursor: pointer;
   }
 `

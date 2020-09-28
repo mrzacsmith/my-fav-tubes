@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledDiv = styled.div`
+  background: ${(pr) => pr.theme.manatee};
   padding: ${(pr) => pr.theme.paddingLarge};
 `
 

@@ -16,11 +16,20 @@ const StyledDiv = styled.div`
     height: 35px;
     font-size: 1.2rem;
     padding-left: 1%;
+    border-radius: 5px;
+    border: 1px solid ${(pr) => pr.theme.manatee};
   }
   button {
     width: 25%;
     font-size: 1.3rem;
+    background: ${(pr) => pr.theme.manatee};
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  button:hover {
+    background: ${(pr) => pr.theme.amaranthRed};
+    transition: linear 0.5s;
   }
 `
 

@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
+:root {
+  --spaceCadet: #2b2d42;
+  --manatee: #8d99ae;
+  --aliceBlue: #edf2f4;
+  --imperialRed: #ef233c;
+  --amaranthRed: #d90429;
+}
+
 *,
 html {
   margin: 0;
@@ -12,6 +20,30 @@ body {
   font-family: 'Acme', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+}
+
+a:hover {
+  color: var(--amaranthRed);
+  transition: linear 0.5s;
+}
+
+a:active {
+  color: var(--amaranthRed);
+}
+
+a:focus {
 }
 
 code {

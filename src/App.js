@@ -8,26 +8,26 @@ import styled from 'styled-components'
 import './App.css'
 
 const StyledDiv = styled.div`
-	max-width: 1000px;
-	width: 100%;
-	background: #f3f3f3;
-	margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+  background: ${(pr) => pr.theme.aliceBlue};
+  margin: 0 auto;
 `
 
 const App = () => {
-	return (
-		<StyledDiv className="App">
-			<Router>
-				<Nav />
-				<Switch>
-					<Route path="/" exact />
-					<Route path="/contact" component={Contact} />
-				</Switch>
-				<Submit />
-				<Footer />
-			</Router>
-		</StyledDiv>
-	)
+  return (
+    <StyledDiv className="App">
+      <Router>
+        <Nav />
+        <Switch>
+          <Route path="/" exact />
+          <Route path="/contact" component={Contact} />
+        </Switch>
+        <Submit />
+        <Footer />
+      </Router>
+    </StyledDiv>
+  )
 }
 
 export default App

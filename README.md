@@ -16,6 +16,7 @@ A MERN app that allows you to enter your favorite YouTube videos and it will ren
   - axios
   - styled-components
   - react-hook-form
+  - react-router-dom
   - cypress
   - lambda-react
 
@@ -28,6 +29,10 @@ A MERN app that allows you to enter your favorite YouTube videos and it will ren
   - colors
   - mongoose
 
+## Style Guide
+
+- [Color palette](https://coolors.co/2b2d42-8d99ae-edf2f4-ef233c-d90429)
+
 ## Installation
 
 - `npx lambda-react tommy-john`
@@ -35,15 +40,17 @@ A MERN app that allows you to enter your favorite YouTube videos and it will ren
 
 ### License
 
-[MIT](https://github.com/jlpanetta1681/my-fav-tubes/blob/master/LICENSE) 
+[MIT](https://github.com/jlpanetta1681/my-fav-tubes/blob/master/LICENSE)
 
 ### Test
 
 - Frontend
+
   - cypress
 
 - Backend
   - jest
 
 ### Contributing
+
 Review the [CONTRIBUTING](https://github.com/jlpanetta1681/my-fav-tubes/blob/master/CONTRIBUTING.md) document.
